@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Projects Practice</title>
+  </head>
+  <body>
+    <div class="youtube-container">
+      <h2>YouTube Subscribe Button</h2>
+      <button class="youtube-btn" onclick="subscribed()">Subscribe</button>
+    </div>
+
+    <div class="rock-paper-scissors-container">
+      <h2>Rock Paper Scissors</h2>
+      <a href="/Practice 2/game-HTML/app.html">Click here</a>
+    </div>
+
+    <div class="amazon-container">
+      <h2>Amazon Shipping Calculator</h2>
+      <p>Orders under $40 = +$10 shipping.</p>
+      <p>Orders over $40 = FREE shipping.</p>
+      <input
+        type="text"
+        name=""
+        id="input-element"
+        onkeydown="keyDown(event)"
+      />
+      <button class="calculate-btn" onclick="calculateShipping()">
+        Calculate
+      </button>
+      <p class="display-value"></p>
+    </div>
+
+    <p><a href="app-style/app.html">CSS version of these projects</a></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+FR+Moderne:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #FFEFBA;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA); 
+}
+
+h1{
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Playwrite FR Moderne", cursive;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.youtube-container, .rock-paper-scissors-container, .amazon-container{
+ border: 2px solid black;
+ padding: 30px;
+ text-align: center;
+ margin-top: 40px;
+ width: 230px;
+ height: 340px;
+ border-radius: 5px;
+ box-shadow: inset -4px -7px 22px -18px rgba(0, 0, 0, 1);
+}
+
+/* YouTube Subscribe BUTTON ================================ */
+span{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: blue;
+}
+
+.youtube-btn{
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 17px;
+  margin-top: 50px;
+  padding: 10px;
+  width: 140px;
+  cursor: pointer;
+  border: none;
+}
+
+.youtube-btn-subscribed{
+  background-color: rgba(251, 0, 0, 0.967);
+  color: white;
+}
+
+/* Amazon Shipp ============================================== */
+
+.amazon-container p{
+  font-size: 1.2rem;
+}
+
+.shipping{
+  display: block;
+  font-weight: bold;
+  color: green;
+}
+
+.free-shipping{
+  display: block;
+  font-weight: bold;
+  color: rgb(4, 83, 4);
+}
+
+.input{
+  background-color: rgb(14, 162, 41);
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 19px;
+  font-size: 1.2rem;
+}
+
+.input:active{
+  background-color: #96c93d;
+}
+
+.calculate-btn{
+  padding: 10px;
+  width: 140px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #00b09b; 
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b); 
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.calculate-btn:hover{
+  background: #00b09bb1; 
+  background: -webkit-linear-gradient(to right, #96c93d9b, #00b09b86); 
+  background: linear-gradient(to right, #96c93d81, #00b09b7b);
+}
+
+/* Rock Paper Scissors ===================== */
+
+.rock-paper-scissors-container a{
+  color: palevioletred;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+}
+
+.rock-paper-scissors-container a:hover{
+  color: palevioletred;
+}
+
+
+/* ------------------------- mobile-version --------------------- */
+
+@media only screen 
+and (min-width: 400px)
+and (max-width: 890px){
+  .container{
+    display: grid;
+  }
+}
